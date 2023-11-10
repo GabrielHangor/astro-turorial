@@ -42,7 +42,7 @@ body {
 }
 
 .expanded {
-    display: unset;
+    display: flex;
     border: 1px solid #ff9776;
     flex-direction: column;
 }
