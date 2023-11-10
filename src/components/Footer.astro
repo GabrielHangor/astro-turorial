@@ -5,7 +5,8 @@ const username = "GabrielHangor";
 const currentDate = new Date().getFullYear();
 ---
 
-<footer class="container">
+<footer>
+    <div class="container">
     <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
 
     <nav>
@@ -28,10 +29,11 @@ const currentDate = new Date().getFullYear();
     </nav>
 
     <p>GabrielHangor &copy; {currentDate}</p>
+    </div>
 </footer>
 <style>
     footer {
-        border: black 1px solid;
-        padding: 1rem;
+        background-color: #f6ddd5;
+        padding: 0;
     }
 </style>

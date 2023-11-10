@@ -3,12 +3,24 @@
 body {
     background-color: whitesmoke;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    & header {
+        padding: 0;
+    }
 }
+
+main {
+    flex: 1;
+}
+
 
 /* nav styles */
 .hamburger {
     padding-right: 20px;
     cursor: pointer;
+    padding-top: 1rem;
 }
 
 .hamburger .line {
@@ -41,6 +53,10 @@ body {
     background-color: #ff9776;
 }
 
+a:active {
+    background-color: #ff9776;
+}
+
 .expanded {
     display: flex;
     border: 1px solid #ff9776;
@@ -50,7 +66,8 @@ body {
 @media screen and (min-width: 636px) {
     .nav-links {
         margin-left: 5em;
-        display: block;
+        display: flex;
+        gap: 1rem;
         position: static;
         width: auto;
         background: none;

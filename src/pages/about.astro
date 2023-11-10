@@ -1,7 +1,5 @@
 ---
-import '../styles/pico.css';
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = 'About Me';
 
@@ -18,18 +16,7 @@ const happy = true;
 const finished = false;
 const goal = 3;
 ---
-
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
-    <title>{pageTitle}</title>
-</head>
-<body>
-<Header/>
-<main class="container">
-    <h1>About Me</h1>
-    <h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
     <h2>... and my new Astro site!</h2>
 
     <p>
@@ -74,10 +61,5 @@ const goal = 3;
                 <p>My goal is not 3 days.</p>
         )
     }
-</main>
-<Footer/>
-<script>
-    import '../scripts/menu.ts'
-</script>
-</body>
-</html>
+</BaseLayout>
+
