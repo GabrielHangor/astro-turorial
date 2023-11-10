@@ -1,8 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Counter from '../components/Counter.vue'
 const pageTitle = 'Home Page';
 ---
 <BaseLayout pageTitle={pageTitle}>
     <h2>My awesome blog subtitle</h2>
+    <h3>And here is the interactive vue island</h3>
+
+    <Counter client:idle startingValue={2}/>
 </BaseLayout>
 

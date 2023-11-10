@@ -1,5 +1,8 @@
 import { defineConfig } from "astro/config";
+import vue from "@astrojs/vue";
 
+// https://astro.build/config
 export default defineConfig({
-    site: "https://hangor-astro-tutorial.netlify.app/"
+  site: "https://hangor-astro-tutorial.netlify.app/",
+  integrations: [vue()]
 });
