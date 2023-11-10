@@ -1,7 +1,10 @@
 <template>
-  <h1>Counter value is: {{ value }}</h1>
-  <button @click="increaseValue">Append counter value</button>
-  <button @click="decreaseValue">Decrease counter value</button>
+  <section style="background-color: aquamarine">
+    <h3>And here is the interactive vue island</h3>
+    <h1>Counter value is: {{ value }}</h1>
+    <button @click="increaseValue">Append counter value</button>
+    <button @click="decreaseValue">Decrease counter value</button>
+  </section>
 </template>
 
 <script setup lang="ts">
