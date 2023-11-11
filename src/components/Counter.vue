@@ -8,18 +8,17 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-
+import { ref } from 'vue';
 
 const props = defineProps<{ startingValue: number }>();
 
-const value = ref(props.startingValue)
+const value = ref(props.startingValue);
 
 function increaseValue() {
-  value.value += 1
+  value.value += 1;
 }
 
 function decreaseValue() {
-  value.value -= 1
+  value.value -= 1;
 }
 </script>
