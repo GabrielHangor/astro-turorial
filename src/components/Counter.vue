@@ -1,5 +1,5 @@
 <template>
-  <section style="background-color: aquamarine">
+  <section style="border: 1px solid black">
     <h3>And here is the interactive vue island</h3>
     <h1>Counter value is: {{ value }}</h1>
     <button @click="increaseValue">Append counter value</button>
